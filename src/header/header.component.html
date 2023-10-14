@@ -1,0 +1,8 @@
+<form>
+  <input type="text" [defaultValue]="nameOfUser" /> <!-- Binding - связь, объединение -->
+  <button type="submit" (click)="readUserName()">OK</button> <!-- Вызов метода при клике -->
+</form>
+<!-- Пример использования стилей, события и интерполяции -->
+<p [class.red]="isRed" (mouseenter)="changeColor()">{{title}}!</p>
+<!-- Использование директивы NgFor -->
+<div *ngFor="let item of products">{{item}}</div>
